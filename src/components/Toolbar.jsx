@@ -136,7 +136,7 @@ const Toolbar = ({
                             <div
                                 key={table.table_id}
                                 className={`relative group ${
-                                    selectedTableId === table.table_id ? 'border border-red-500' : ''
+                                    selectedTableId === table.table_id ? 'border border-red-500 ' : ''
                                 }`}
                                 style={{
                                     display: 'flex',
