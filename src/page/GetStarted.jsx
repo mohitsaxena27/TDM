@@ -1,7 +1,7 @@
 // src/components/GetStarted.jsx
 
 import React from 'react';
-
+ 
 const GetStarted = ({ onGetStarted }) => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-600 to-purple-800 text-white">

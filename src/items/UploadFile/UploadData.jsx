@@ -23,7 +23,7 @@ const UploadData = ({ tableId, fetchTableData }) => {
         formData.append("table_id", tableId);
 
         try {
-            const response = await axios.post('http://10.154.0.207:5000/upload_excel', formData, {
+            const response = await axios.post(`${config.TDMIP}/upload_excel`, formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
 

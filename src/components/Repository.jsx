@@ -33,6 +33,7 @@ const Repository = ({ onRepoSelect, onTableSelect, selectedRepoId }) => {
                 const selectedRepo = response.data.repositories.find(repo => repo.repo_id === selectedRepoId);
                 if (selectedRepo) {
                     handleRepoClick(selectedRepo);
+                    fetchRepositories();
                 }
             }
         } catch (error) {
@@ -116,7 +117,7 @@ const Repository = ({ onRepoSelect, onTableSelect, selectedRepoId }) => {
     }
 
     return (
-        <div className="flex justify-center pl-2  m-2">
+        <div className="flex justify-center  pt-3 m-2">
             <div className="bg-white text-gray-800 w-64 p-2 rounded-lg shadow-md h-full">
                 <h1 className='text-center text-xl font-semibold mb-4 tracking-wide flex justify-between items-center'>
                     Repo Manager
